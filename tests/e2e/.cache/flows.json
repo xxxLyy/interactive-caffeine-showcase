@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "flows": {
+    "demo-track-challenge": {
+      "flowId": "demo-track-challenge",
+      "specDigest": "297fe108f21ed7fe9c1d1db7eb0c868cc02f820522ab002584e64b754d6920b4",
+      "status": "recorded",
+      "recordedAt": "2026-11-24T08:33:02.568Z",
+      "recordedBy": "claude-opus-5-5",
+      "entries": [
+        "0d7e66a4a8f8dbe1fc11fb409c06258f032078e0934a38f57dea5ccf443e8d8e.json",
+        "10e985e137b30762941bba405bef7c109bc2254eb6bbcc788e50081797b11a52.json"
+      ],
+      "ranAfter": [
+        "demo-track-play"
+      ],
+      "ranWith": [
+        "demo-track-play"
+      ],
+      "passedTree": "314485478eef532ff09f78f88bf3f327b132509d",
+      "visitedPaths": [
+        "/"
+      ],
+      "readOnly": true
+    },
+    "demo-track-play": {
+      "flowId": "demo-track-play",
+      "specDigest": "4c9222a157552e291eb033c15416493e863cdb3c8a32d5ae4db327a6f166ade1",
+      "status": "recorded",
+      "recordedAt": "2026-11-24T08:39:01.181Z",
+      "recordedBy": "claude-opus-5-5",
+      "entries": [
+        "c047cf383ec038eeccf690b289d7abbd70ba3a7febfd7f71c553fc814bebadac.json",
+        "6b48c3caaf16fe55ed0d32c312dcc18819181f4b3a9743ab48e76ab72748fcfe.json",
+        "f13357d3074b15504277b5b63704fd53aba8c6cdd54bee024f0f0a6a950fa841.json",
+        "c2534e92d9f354551f76a1cd547f937184cf374b0d80f2d621eb78f2497d9ef7.json"
+      ],
+      "ranAfter": [],
+      "ranWith": [],
+      "readOnly": true
+    },
+    "enter-and-play": {
+      "flowId": "enter-and-play",
+      "specDigest": "599c20cd342232879a39ee7fc5f9c14fd50e55c9fb30d0c0580dcd7f38deca80",
+      "status": "recorded",
+      "recordedAt": "2026-11-20T17:39:16.411Z",
+      "recordedBy": "claude-opus-5-5",
+      "entries": [
+        "a0d666db9f0d266447d5ad691b50886254c92e4bf654822b21097a7e1568e7ae.json",
+        "581fb1d8863e4d54e71689c3e66d0457b696554101e2008b6433628c4186407f.json",
+        "ae508563ab826ba7cf2f4e4715b7660873e0385e8459c470130ca822254f73a7.json",
+        "7177f63b4c1a43a730f20b812de488ed95311e0cd935566fcd3061feda872138.json"
+      ],
+      "noChangeSteps": [
+        1
+      ],
+      "ranAfter": [],
+      "ranWith": [],
+      "passedTree": "38f673d32639f30f279e9551063dab6a070c0f9f",
+      "visitedPaths": [
+        "/"
+      ],
+      "readOnly": true
+    },
+    "rhythm-challenge": {
+      "flowId": "rhythm-challenge",
+      "specDigest": "6f8438fc5ea355f174d1161ea1f4d13c6d0ef9f03b2ac2bfa027810faadcd5a5",
+      "status": "recorded",
+      "recordedAt": "2026-11-24T07:36:06.992Z",
+      "recordedBy": "claude-opus-5-5",
+      "entries": [
+        "da93e5bcc8a71de9bc56ad9976d9578c141cc893eea0a27915ed8e0b55080835.json",
+        "0646443b26209c8acf1e87d7453085b8b532232aea7b79f6789ee0430f00c1ae.json"
+      ],
+      "ranAfter": [
+        "enter-and-play",
+        "sequencer",
+        "shapes-palettes-presets",
+        "track-library",
+        "viewing-mode"
+      ],
+      "ranWith": [
+        "enter-and-play",
+        "sequencer",
+        "shapes-palettes-presets",
+        "track-library",
+        "viewing-mode"
+      ],
+      "passedTree": "314485478eef532ff09f78f88bf3f327b132509d",
+      "visitedPaths": [
+        "/"
+      ],
+      "readOnly": true
+    },
+    "sequencer": {
+      "flowId": "sequencer",
+      "specDigest": "56c4cc07ac2db1b7ac12d7c7f20902f7db53f6fa6194cd83469c502dc16291db",
+      "status": "recorded",
+      "recordedAt": "2026-11-24T08:39:01.178Z",
+      "recordedBy": "claude-opus-5-5",
+      "entries": [
+        "8e928147d0b077f13925b2e1f84e5a2f1d006b27972c914894846840b18daa34.json",
+        "2af170fa3e7430f7c2ba3e19062d02accae891cd0420cf55c2ff45032f3b24fc.json",
+        "76c53e02520f47066156d15894e26a0efaa4d8138b963ab7881e16d8708b1f1f.json",
+        "12a53d1f06906e0acd65b5f2659080b0d7b115a724161ac345ead5c8e31fae31.json",
+        "66f9697a1fe7829f3e52386b6c5126ff798e7020bd006e0ab94873ce7bf27c04.json"
+      ],
+      "ranAfter": [
+        "enter-and-play",
+        "shapes-palettes-presets"
+      ],
+      "ranWith": [
+        "enter-and-play",
+        "shapes-palettes-presets"
+      ],
+      "readOnly": true
+    },
+    "shapes-palettes-presets": {
+      "flowId": "shapes-palettes-presets",
+      "specDigest": "6dd3652378f9b31ad32e5eda1d40eaf9f6bc48c2c8a5e9a9610be2552e1ba884",
+      "status": "recorded",
+      "recordedAt": "2026-11-20T17:39:16.412Z",
+      "recordedBy": "claude-opus-5-5",
+      "entries": [
+        "e9984afbfcfc356ed39cebcdf5e709d61d083638dff5fa069e6a325c41f31704.json",
+        "f1d26264979c363b440c0db40d59e0ccc69e8aaf5f551c1c4d29d6bc05807c27.json",
+        "45fbf1ecf4054a4d17897083d0cceaf12289579b9e5f987f229029899a71d06f.json",
+        "48cab407863c0d2f45515e4d3a5caff7af500676af8837e55b94cc55b4d87c57.json"
+      ],
+      "noChangeSteps": [
+        4
+      ],
+      "ranAfter": [
+        "enter-and-play"
+      ],
+      "ranWith": [
+        "enter-and-play"
+      ],
+      "passedTree": "38f673d32639f30f279e9551063dab6a070c0f9f",
+      "visitedPaths": [
+        "/"
+      ],
+      "readOnly": true
+    },
+    "track-library": {
+      "flowId": "track-library",
+      "specDigest": "bea348b63d75f9c7702f8bfb49443ae53eb57ca35c545a64a060a69b9722af54",
+      "status": "recorded",
+      "recordedAt": "2026-11-24T08:39:01.181Z",
+      "recordedBy": "claude-opus-5-5",
+      "entries": [
+        "478c9df0e2249631bdf1ae8e57e489eb886be777bbfb93fc33d6fe5eed5394af.json",
+        "587c4730d8d9d8d0bf8b6b37f7adc6e295e9bb950206e4fed65f655bd710e6c6.json",
+        "ba92eb9b845028137a2711911330117040af15d413e131946ed851eb205ec2ef.json"
+      ],
+      "ranAfter": [
+        "enter-and-play",
+        "sequencer",
+        "shapes-palettes-presets",
+        "viewing-mode"
+      ],
+      "ranWith": [
+        "enter-and-play",
+        "sequencer",
+        "shapes-palettes-presets",
+        "viewing-mode"
+      ],
+      "readOnly": true
+    },
+    "viewing-mode": {
+      "flowId": "viewing-mode",
+      "specDigest": "5af29b8f4f94a03b845bef7a9d60515d79a1815f240e584a234f74bdc2f0721b",
+      "status": "recorded",
+      "recordedAt": "2026-11-20T17:39:16.413Z",
+      "recordedBy": "claude-opus-5-5",
+      "entries": [
+        "73547e7b1bc3dda38a452c8bcc3a2a9e6a6f5ceb96415b5206f275759245e257.json",
+        "095255ef7202e5c9deeb8ad72c39aeb46c71f60e556d4ca8dcf4a8a84142d0f9.json",
+        "9e06d535b0084d24aba991d8946e39dba65f932bc4af563240325c6578ec1f39.json"
+      ],
+      "ranAfter": [
+        "enter-and-play",
+        "sequencer",
+        "shapes-palettes-presets"
+      ],
+      "ranWith": [
+        "enter-and-play",
+        "sequencer",
+        "shapes-palettes-presets"
+      ],
+      "passedTree": "314485478eef532ff09f78f88bf3f327b132509d",
+      "visitedPaths": [
+        "/"
+      ],
+      "readOnly": true
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "enter-and-play",
+    "kind": "interactive",
+    "goal": "Start the sound, play a key, change waveform and mute",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Press the 点击进入 / 启动声音 button",
+      "Press the C4 key",
+      "Select the 锯齿 Saw waveform",
+      "Press the 静音 button",
+      "Press the 取消静音 button"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "RESONANCE"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "BPM"
+      },
+      {
+        "afterStep": 1,
+        "expectRole": {
+          "role": "button",
+          "name": "C4"
+        }
+      },
+      {
+        "afterStep": 2,
+        "expectRole": {
+          "role": "button",
+          "name": "锯齿 Saw"
+        }
+      },
+      {
+        "afterStep": 3,
+        "expectText": "取消静音"
+      },
+      {
+        "afterStep": 4,
+        "expectNoText": "取消静音"
+      }
+    ]
+  }
+}

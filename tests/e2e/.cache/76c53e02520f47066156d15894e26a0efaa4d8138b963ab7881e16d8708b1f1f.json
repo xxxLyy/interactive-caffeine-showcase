@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-24T08:31:25.136Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"播放 Play\"",
+        "target": {
+          "role": "button",
+          "name": "播放 Play",
+          "text": "播放"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "sequencer.e2e.ts::sequencer",
+      "targetId": "web",
+      "instructionDigest": "d8c667a91e12372158567c9014951043f7c747e69ee00ecbabbaa7937a2918e1",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "I pressed 播放 Play and the sequencer started: the button (n9221) now reads 暂停 Pause and shows as pressed. The 暂停 button hasn't been pressed yet.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "-30 dB"
+      },
+      {
+        "text": "Pause"
+      },
+      {
+        "role": "button",
+        "name": "暂停 Pause",
+        "text": "暂停",
+        "states": [
+          "pressed"
+        ]
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "−∞ dB"
+      },
+      {
+        "text": "Play"
+      },
+      {
+        "role": "button",
+        "name": "播放 Play",
+        "text": "播放"
+      }
+    ],
+    "endWaitMs": 11849,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

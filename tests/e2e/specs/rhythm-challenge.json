@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "rhythm-challenge",
+    "kind": "interactive",
+    "goal": "Start the Rhythm Challenge and see its countdown and game screen",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Press the enter button on the intro screen",
+      "Press the 共鸣挑战 button"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "共鸣挑战"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "combo"
+      }
+    ]
+  }
+}

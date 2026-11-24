@@ -1,0 +1,19 @@
+{
+  "overview": "An interactive audio-visual instrument with a particle field, music tracks, rhythm games, song upload that generates a performance, and a built-in demo song.",
+  "features": [
+    "Play an interactive synth instrument with a reactive particle field",
+    "Play and switch between music tracks",
+    "Upload your own song to generate a matching performance",
+    "Hear a built-in demo song in My Tracks right away",
+    "Rhythm challenge game, mode switching, drum kit and play-along mode"
+  ],
+  "category": "creative-coding-showcase",
+  "tags": [
+    "music",
+    "generative-art",
+    "synthesizer",
+    "interactive",
+    "three-js"
+  ],
+  "last_updated": "2026-11-24T08:17:52.653Z"
+}

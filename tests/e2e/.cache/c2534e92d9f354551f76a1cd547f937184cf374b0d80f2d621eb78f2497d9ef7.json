@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-24T08:38:38.853Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"点击进入 启动声音\"",
+        "target": {
+          "role": "button",
+          "name": "点击进入 启动声音"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "demo-track-play.e2e.ts::demo-track-play",
+      "targetId": "web",
+      "instructionDigest": "d1153faf7cc958382e1b71be5eaa0e39879c19857b951bfd5b850f2e5af020c7",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "Pressed 点击进入 启动声音 and the instrument opened. The button reads 启动中… for now. The Track Library is showing, and 我的曲目 lists the 共振示范 track (示范 Demo, D Major · 89 BPM). The player reads Paused · Ambient for 深海漂流.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "Note //"
+      },
+      {
+        "text": "C4"
+      },
+      {
+        "text": "BPM //"
+      },
+      {
+        "text": "120.0"
+      },
+      {
+        "text": "Form //"
+      },
+      {
+        "text": "星系 Galaxy"
+      },
+      {
+        "text": "Energy //"
+      },
+      {
+        "text": "−∞ dB"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "N°01 — Audiovisual Instrument / 视听粒子合成器"
+      },
+      {
+        "role": "heading",
+        "name": "RESONANCE 共振"
+      },
+      {
+        "text": "点击进入"
+      },
+      {
+        "text": "启动声音"
+      },
+      {
+        "text": "Touch the field, play the light. 触碰粒子场，用声音塑造光。建议佩戴耳机。"
+      },
+      {
+        "role": "button",
+        "name": "点击进入 启动声音"
+      }
+    ],
+    "endWaitMs": 14791,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

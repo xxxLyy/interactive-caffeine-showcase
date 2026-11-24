@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T17:39:16.280Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"收起面板\"",
+        "target": {
+          "role": "button",
+          "name": "收起面板"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "viewing-mode.e2e.ts::viewing-mode",
+      "targetId": "web",
+      "instructionDigest": "541c6362b5efd187f1173dc969d64be24dd3c834e21f17d5d83ff2b3c7ef7cd0",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "Pressed 收起面板. The button now reads 展开面板 and is no longer in the expanded state, so the panel is collapsed.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "展开面板"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "收起面板",
+        "states": [
+          "expanded"
+        ]
+      }
+    ],
+    "endWaitMs": 13818,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

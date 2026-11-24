@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-24T08:33:02.456Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"共鸣挑战 Challenge\"",
+        "target": {
+          "role": "button",
+          "name": "共鸣挑战 Challenge",
+          "text": "共鸣挑战"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "demo-track-challenge.e2e.ts::demo-track-challenge",
+      "targetId": "web",
+      "instructionDigest": "9ebffc801ce3500ac422d3d6c05e8d9dd16284e8d88fe627b1d6f5fda54bffe4",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "I pressed the 共鸣挑战 Challenge button and the challenge started. The screen shows \"共鸣挑战 · 共振示范 D Major\" with Score 0, Combo ×0 and a countdown at \"2\". The Pause button is disabled for now, and a 退出挑战 Quit button is available.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "Paused · Demo"
+      },
+      {
+        "role": "button",
+        "name": "播放曲目 Play",
+        "text": "播放"
+      },
+      {
+        "text": "MISS"
+      },
+      {
+        "text": "共鸣挑战 · 共振示范 D Major"
+      },
+      {
+        "text": "Score 得分"
+      },
+      {
+        "role": "button",
+        "name": "暂停 Pause"
+      },
+      {
+        "role": "button",
+        "name": "退出挑战 Quit"
+      },
+      {
+        "text": "×0"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Note //"
+      },
+      {
+        "text": "BPM //"
+      },
+      {
+        "text": "89.0"
+      },
+      {
+        "text": "Form //"
+      },
+      {
+        "text": "波浪 Wave"
+      },
+      {
+        "text": "Energy //"
+      },
+      {
+        "text": "-26 dB"
+      },
+      {
+        "text": "RESONANCE共振"
+      }
+    ],
+    "endWaitMs": 16128,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

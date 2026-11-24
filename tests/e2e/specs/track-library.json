@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "track-library",
+    "kind": "interactive",
+    "goal": "Enter the instrument, play a built-in track and skip to the next track",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Press the enter button on the intro screen",
+      "Press the play button in the track panel",
+      "Press the next track button in the track panel"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "共鸣挑战"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "BPM"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "BPM"
+      }
+    ]
+  }
+}

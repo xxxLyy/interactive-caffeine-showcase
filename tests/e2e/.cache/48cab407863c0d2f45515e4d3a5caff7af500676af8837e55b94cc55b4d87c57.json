@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T17:37:48.374Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"晶体 Crystal\"",
+        "target": {
+          "role": "button",
+          "name": "晶体 Crystal"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "shapes-palettes-presets.e2e.ts::shapes-palettes-presets",
+      "targetId": "web",
+      "instructionDigest": "89987586ec7ff392ba4b56bc3f4cdf0950a32f49836889767182380fa7ca572f",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "Pressed 晶体 Crystal; it is now pressed. The preset applied: Form changed to 球体 Sphere, palette to 冰蓝 Ice, waveform to 方波 Square, and the knobs to Cutoff 90, Resonance 72, Reverb 54, Delay 34.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "球体 Sphere"
+      },
+      {
+        "role": "button",
+        "name": "晶体 Crystal",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "正弦 Sine",
+        "text": "正弦"
+      },
+      {
+        "role": "button",
+        "name": "方波 Square",
+        "text": "方波",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "球体 Sphere",
+        "text": "球体",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "环面 Torus",
+        "text": "环面"
+      },
+      {
+        "role": "button",
+        "name": "熔金 Gold"
+      },
+      {
+        "role": "button",
+        "name": "冰蓝 Ice",
+        "states": [
+          "pressed"
+        ]
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "环面 Torus"
+      },
+      {
+        "role": "button",
+        "name": "晶体 Crystal"
+      },
+      {
+        "role": "button",
+        "name": "正弦 Sine",
+        "text": "正弦",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "方波 Square",
+        "text": "方波"
+      },
+      {
+        "role": "button",
+        "name": "球体 Sphere",
+        "text": "球体"
+      },
+      {
+        "role": "button",
+        "name": "环面 Torus",
+        "text": "环面",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "熔金 Gold",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "冰蓝 Ice"
+      }
+    ],
+    "endWaitMs": 15066,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

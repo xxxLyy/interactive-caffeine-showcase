@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "viewing-mode",
+    "kind": "interactive",
+    "goal": "Collapse the panel into pure viewing mode and expand it again",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Press the 点击进入 / 启动声音 button",
+      "Press the 收起面板 button",
+      "Press the 展开面板 button"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "RESONANCE"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "展开面板"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "收起面板"
+      }
+    ]
+  }
+}

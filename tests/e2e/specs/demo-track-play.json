@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "demo-track-play",
+    "kind": "interactive",
+    "goal": "The demo track is listed in 我的曲目 with its Demo tag, plays its generated performance, and stays after a reload while the upload entry stays visible",
+    "requirementIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "acceptanceCriteriaIndexes": [
+      0,
+      1,
+      2,
+      4,
+      5
+    ],
+    "steps": [
+      "Press 点击进入 启动声音",
+      "Press the 共振示范 track in 我的曲目",
+      "Press the play button",
+      "Reload the page",
+      "Press 点击进入 启动声音"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "我的曲目"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "共振示范"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "示范 Demo"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "共振示范"
+      },
+      {
+        "afterStep": 2,
+        "assert": "The now-playing card shows the demo track playing and its progress advances"
+      },
+      {
+        "afterStep": 3,
+        "expectText": "RESONANCE"
+      },
+      {
+        "afterStep": 4,
+        "expectText": "共振示范"
+      },
+      {
+        "afterStep": 4,
+        "expectText": "示范 Demo"
+      },
+      {
+        "afterStep": 4,
+        "assert": "The demo row has no delete control"
+      },
+      {
+        "afterStep": 4,
+        "assert": "The song upload area is still visible in the track panel"
+      }
+    ]
+  }
+}

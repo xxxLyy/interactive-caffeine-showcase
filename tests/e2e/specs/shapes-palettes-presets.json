@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "shapes-palettes-presets",
+    "kind": "interactive",
+    "goal": "Morph the particle shape, change palette, apply a preset and trigger a shockwave",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Press the 点击进入 / 启动声音 button",
+      "Press the 环面 Torus shape button",
+      "Press the 熔金 Gold palette button",
+      "Press the 晶体 Crystal preset button",
+      "Click the middle of the particle field"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "RESONANCE"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "Torus"
+      },
+      {
+        "afterStep": 2,
+        "expectRole": {
+          "role": "button",
+          "name": "熔金 Gold"
+        }
+      },
+      {
+        "afterStep": 3,
+        "expectRole": {
+          "role": "button",
+          "name": "晶体 Crystal"
+        }
+      },
+      {
+        "afterStep": 4,
+        "expectText": "RESONANCE"
+      },
+      {
+        "afterStep": 4,
+        "assert": "An expanding shockwave ring appears where the field was clicked"
+      }
+    ]
+  }
+}

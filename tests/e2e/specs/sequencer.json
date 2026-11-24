@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "sequencer",
+    "kind": "interactive",
+    "goal": "Randomize the sequencer, play and pause it, then clear it",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Press the 点击进入 / 启动声音 button",
+      "Press the 随机 button",
+      "Press the 播放 button",
+      "Press the 暂停 button",
+      "Press the 清空 button"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "RESONANCE"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "BPM"
+      },
+      {
+        "afterStep": 1,
+        "assert": "Several sequencer grid cells are lit after randomizing"
+      },
+      {
+        "afterStep": 2,
+        "expectRole": {
+          "role": "button",
+          "name": "暂停"
+        }
+      },
+      {
+        "afterStep": 3,
+        "expectRole": {
+          "role": "button",
+          "name": "播放"
+        }
+      },
+      {
+        "afterStep": 4,
+        "expectText": "BPM"
+      },
+      {
+        "afterStep": 4,
+        "assert": "No sequencer grid cells are lit after clearing"
+      }
+    ]
+  }
+}

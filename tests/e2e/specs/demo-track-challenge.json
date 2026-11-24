@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "demo-track-challenge",
+    "kind": "interactive",
+    "goal": "The demo track can be used for the rhythm challenge like other tracks",
+    "requirementIndexes": [
+      5
+    ],
+    "acceptanceCriteriaIndexes": [
+      6
+    ],
+    "steps": [
+      "Press the 共振示范 track in 我的曲目",
+      "Press the rhythm challenge button"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "共振示范"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "共振示范"
+      },
+      {
+        "afterStep": 1,
+        "assert": "The rhythm challenge screen opens for the demo track"
+      }
+    ]
+  }
+}

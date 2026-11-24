@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "flows": {
+    "demo-track-challenge": {
+      "plan": [
+        "4bd947b850506bd9",
+        "678e2168aa3717b4"
+      ],
+      "last": "passed"
+    },
+    "demo-track-play": {
+      "plan": [
+        "107fe2ac8f619004",
+        "3b564a480c606bed",
+        "4a6f10653bb755b1",
+        "7628fe67d21fa413",
+        "920ad2e9eb1aba5e",
+        "9fd54f415b92f9f3",
+        "a13e90ed0ee897d0",
+        "bce389bc897117b5",
+        "bfc5cf6a35b709b9",
+        "c1eaef2433b9095c"
+      ],
+      "last": "passed"
+    },
+    "enter-and-play": {
+      "plan": [
+        "0e0f39e28fbc4edf",
+        "13ca53a71a8120e8",
+        "1cf5a04b2871b4c1",
+        "464e66db36140d48",
+        "560b593269201e64",
+        "6e4bb18572b671e7",
+        "9785a467e62bbb18",
+        "d2d50f42004a6391",
+        "d7043f03f542665c",
+        "daaf2cd783e7f25c",
+        "ef336c67df3027aa",
+        "f259c5526eabef88"
+      ],
+      "last": "passed"
+    },
+    "rhythm-challenge": {
+      "plan": [
+        "175a001fa476709f",
+        "2939f9063ba635ca",
+        "4a8098a2571966e1",
+        "6bdec9ac620e8974",
+        "8e760401c6509a1b",
+        "9e34af200767676c",
+        "a1ffc32a4b4b8dcd",
+        "ed854a7a1450417a"
+      ],
+      "last": "passed"
+    },
+    "sequencer": {
+      "plan": [
+        "360ff1c8e3e94bde",
+        "45451e2990da24f2",
+        "67e43341c10ea85b",
+        "d77c5b4082e75020"
+      ],
+      "last": "passed"
+    },
+    "shapes-palettes-presets": {
+      "plan": [
+        "1482c45dd21813ee",
+        "2da39d2e11e5ecab",
+        "2fdd8dda03f8af8c",
+        "336c07793013e426",
+        "3cb656a0810b3394",
+        "4146b0cc0d07dfde",
+        "4c950b007d30d075",
+        "8a894934700c9d22",
+        "d20a730edda5c0af"
+      ],
+      "last": "passed"
+    },
+    "track-library": {
+      "plan": [
+        "1225865e93d183e9",
+        "31fa671204b14245",
+        "550b4d5451d26dd6",
+        "5e5209b2fe8bfa6a",
+        "805a73338e971b95",
+        "a8b517e290e8ed75",
+        "ba4d2095da27e7f1",
+        "bbad48e0c6573e52",
+        "becc17c62aba8a57",
+        "c177ce420056260c",
+        "c41f100f079efcda",
+        "cb52d24c8ddd05cc",
+        "cbe35ecce02cfc59",
+        "d10b3aeae47382ce",
+        "e37390f8bf04c9b3",
+        "eae134b9b8bf4030",
+        "f50a9fecb10fb6e2"
+      ],
+      "last": "passed"
+    },
+    "viewing-mode": {
+      "plan": [
+        "345e31cf91ff4600",
+        "8cd9f59a5735f447",
+        "999764e19ab945e0",
+        "9cbd05e7bbc61d4d",
+        "ee4153b8eb3da49a"
+      ],
+      "last": "passed"
+    }
+  },
+  "order": [
+    "enter-and-play",
+    "shapes-palettes-presets",
+    "sequencer",
+    "viewing-mode",
+    "track-library",
+    "rhythm-challenge",
+    "demo-track-play",
+    "demo-track-challenge"
+  ]
+}

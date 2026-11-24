@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T17:36:52.747Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"锯齿 Saw\"",
+        "target": {
+          "role": "button",
+          "name": "锯齿 Saw",
+          "text": "锯齿"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "enter-and-play.e2e.ts::enter-and-play",
+      "targetId": "web",
+      "instructionDigest": "f8a43628314f3265e1deb5c9cf8a28e369e0bcf004b0811e9bb2de6c0020a8b3",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "I tapped 锯齿 Saw, and the waveform switched: 锯齿 Saw now shows as pressed and 正弦 Sine is no longer pressed. The 静音 button (n9086) is on screen for the next step.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "正弦 Sine",
+        "text": "正弦"
+      },
+      {
+        "role": "button",
+        "name": "锯齿 Saw",
+        "text": "锯齿",
+        "states": [
+          "pressed"
+        ]
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "正弦 Sine",
+        "text": "正弦",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "锯齿 Saw",
+        "text": "锯齿"
+      }
+    ],
+    "endWaitMs": 14367,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

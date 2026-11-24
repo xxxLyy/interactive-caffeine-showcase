@@ -1,0 +1,374 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/assets/fonts/SpaceGrotesk.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("/assets/fonts/InstrumentSerif-Italic.woff2") format("woff2");
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/assets/fonts/JetBrainsMono.woff2") format("woff2");
+  font-weight: 100 800;
+  font-display: swap;
+}
+
+@layer base {
+  /* RESONANCE is dark-only: :root and .dark share the same immersive palette. */
+  :root,
+  .dark {
+    --font-display: "Space Grotesk", sans-serif;
+    --font-body: "Space Grotesk", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+    --font-serif: "Instrument Serif", serif;
+    --radius: 0.375rem;
+
+    --background: 0.12 0.025 290;
+    --foreground: 0.95 0.015 80;
+    --card: 0.17 0.03 290;
+    --card-foreground: 0.95 0.015 80;
+    --popover: 0.2 0.035 290;
+    --popover-foreground: 0.95 0.015 80;
+
+    /* primary / accent are re-themed per palette via [data-palette] */
+    --primary: 0.68 0.26 350;
+    --primary-foreground: 0.12 0.025 290;
+
+    --secondary: 0.22 0.035 290;
+    --secondary-foreground: 0.88 0.02 290;
+    --muted: 0.2 0.03 290;
+    --muted-foreground: 0.66 0.03 290;
+
+    --accent: 0.84 0.14 200;
+    --accent-foreground: 0.12 0.025 290;
+
+    --destructive: 0.65 0.22 25;
+    --destructive-foreground: 0.98 0 0;
+    --success: 0.78 0.17 155;
+    --success-foreground: 0.12 0.025 290;
+    --warning: 0.82 0.16 80;
+    --warning-foreground: 0.12 0.025 290;
+
+    --border: 0.95 0.015 80 / 0.1;
+    --input: 0.3 0.04 290;
+    --ring: 0.84 0.14 200;
+
+    --chart-1: 0.68 0.26 350;
+    --chart-2: 0.84 0.14 200;
+    --chart-3: 0.8 0.16 80;
+    --chart-4: 0.8 0.18 155;
+    --chart-5: 0.85 0.06 230;
+
+    --sidebar: 0.15 0.03 290;
+    --sidebar-foreground: 0.95 0.015 80;
+    --sidebar-primary: 0.68 0.26 350;
+    --sidebar-primary-foreground: 0.12 0.025 290;
+    --sidebar-accent: 0.22 0.035 290;
+    --sidebar-accent-foreground: 0.88 0.02 290;
+    --sidebar-border: 0.28 0.04 290;
+    --sidebar-ring: 0.84 0.14 200;
+
+    /* atmosphere: background glow stops (also palette-driven) */
+    --glow-a: 0.32 0.16 340;
+    --glow-b: 0.3 0.12 220;
+    --glass: 0.16 0.03 290 / 0.55;
+    --hairline: 0.95 0.015 80 / 0.12;
+
+    /* rhythm challenge judgments + ranks (fixed across palettes for legibility) */
+    --judge-perfect: 0.95 0.015 80;
+    --judge-good: 0.84 0.14 200;
+    --judge-miss: 0.62 0.2 25;
+    --rank-s: 0.86 0.16 85;
+    --rank-a: 0.84 0.14 200;
+    --rank-b: 0.78 0.17 155;
+    --rank-c: 0.66 0.03 290;
+
+    /* upload & analysis pipeline (palette-driven via primary/accent) */
+    --dropzone-line: 0.95 0.015 80 / 0.22;
+    --step-idle: 0.36 0.03 290;
+    --step-done: 0.78 0.17 155;
+
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --ease-in-out-quint: cubic-bezier(0.83, 0, 0.17, 1);
+    --transition-smooth: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    --gradient-primary: linear-gradient(
+      110deg,
+      oklch(var(--primary)) 0%,
+      oklch(var(--accent)) 100%
+    );
+    --gradient-subtle: radial-gradient(
+        120% 80% at 20% 10%,
+        oklch(var(--glow-a) / 0.55) 0%,
+        transparent 55%
+      ),
+      radial-gradient(
+        90% 70% at 85% 90%,
+        oklch(var(--glow-b) / 0.5) 0%,
+        transparent 60%
+      );
+  }
+
+  /* Palette themes — set data-palette on <html>; transition via @property-less var swap + body transition */
+  [data-palette="neon"] {
+    --primary: 0.68 0.26 350;
+    --accent: 0.84 0.14 200;
+    --ring: 0.84 0.14 200;
+    --glow-a: 0.32 0.16 340;
+    --glow-b: 0.3 0.12 220;
+  }
+  [data-palette="gold"] {
+    --primary: 0.8 0.16 75;
+    --accent: 0.7 0.2 40;
+    --ring: 0.8 0.16 75;
+    --glow-a: 0.34 0.12 55;
+    --glow-b: 0.24 0.08 20;
+  }
+  [data-palette="aurora"] {
+    --primary: 0.82 0.19 155;
+    --accent: 0.72 0.16 280;
+    --ring: 0.82 0.19 155;
+    --glow-a: 0.3 0.12 165;
+    --glow-b: 0.26 0.12 280;
+  }
+  [data-palette="ice"] {
+    --primary: 0.9 0.06 225;
+    --accent: 0.72 0.1 240;
+    --ring: 0.9 0.06 225;
+    --glow-a: 0.28 0.05 230;
+    --glow-b: 0.2 0.03 250;
+  }
+  [data-palette="ember"] {
+    --primary: 0.7 0.21 32;
+    --accent: 0.86 0.15 95;
+    --ring: 0.86 0.15 95;
+    --glow-a: 0.32 0.14 30;
+    --glow-b: 0.22 0.08 70;
+  }
+  [data-palette="sakura"] {
+    --primary: 0.8 0.12 355;
+    --accent: 0.86 0.11 175;
+    --ring: 0.86 0.11 175;
+    --glow-a: 0.3 0.1 350;
+    --glow-b: 0.26 0.07 180;
+  }
+
+  * {
+    @apply border-border;
+  }
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    overflow: hidden;
+    font-feature-settings: "ss01", "tnum";
+  }
+  ::selection {
+    background: oklch(var(--primary) / 0.4);
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  .ease-out-expo {
+    transition-timing-function: var(--ease-out-expo);
+  }
+  .ease-spring {
+    transition-timing-function: var(--ease-spring);
+  }
+  .font-serif-italic {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+  }
+  .text-stroke {
+    -webkit-text-stroke: 1.5px oklch(var(--foreground) / 0.85);
+    color: transparent;
+  }
+  .text-stroke-primary {
+    -webkit-text-stroke: 1.5px oklch(var(--primary));
+    color: transparent;
+  }
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .bg-atmosphere {
+    background-color: oklch(var(--background));
+    background-image: var(--gradient-subtle);
+    transition: background 1.2s var(--ease-in-out-quint);
+  }
+  .glass {
+    background: oklch(var(--glass));
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    border: 1px solid oklch(var(--hairline));
+  }
+  .hairline {
+    border-color: oklch(var(--hairline));
+  }
+  .readout {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-variant-numeric: tabular-nums;
+  }
+  .grain {
+    position: relative;
+  }
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.06;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+  .transition-ui {
+    transition-property: color, background-color, border-color, fill, stroke,
+      opacity, box-shadow, transform, filter;
+    transition-duration: 0.3s;
+    transition-timing-function: var(--ease-out-expo);
+  }
+  .text-judge-perfect {
+    color: oklch(var(--judge-perfect));
+    text-shadow: 0 0 24px oklch(var(--primary) / 0.55);
+  }
+  .text-judge-good {
+    color: oklch(var(--judge-good));
+  }
+  .text-judge-miss {
+    color: oklch(var(--judge-miss));
+  }
+  .text-rank-s {
+    color: oklch(var(--rank-s));
+  }
+  .text-rank-a {
+    color: oklch(var(--rank-a));
+  }
+  .text-rank-b {
+    color: oklch(var(--rank-b));
+  }
+  .text-rank-c {
+    color: oklch(var(--rank-c));
+  }
+  .text-stroke-rank-s {
+    -webkit-text-stroke: 2px oklch(var(--rank-s));
+    color: transparent;
+  }
+  .track-active-bar {
+    box-shadow: inset 2px 0 0 0 oklch(var(--primary));
+    background: linear-gradient(
+      90deg,
+      oklch(var(--primary) / 0.14) 0%,
+      transparent 75%
+    );
+  }
+  .progress-hairline {
+    background: linear-gradient(
+      90deg,
+      oklch(var(--primary)) 0%,
+      oklch(var(--accent)) 100%
+    );
+  }
+  .scrim-game {
+    background: radial-gradient(
+      70% 60% at 50% 45%,
+      oklch(var(--background) / 0.35) 0%,
+      oklch(var(--background) / 0.85) 100%
+    );
+  }
+  /* Upload dropzone: marching dashed hairline drawn with gradients so it can animate */
+  .dropzone {
+    --dz-line: oklch(var(--dropzone-line));
+    background-image: linear-gradient(90deg, var(--dz-line) 50%, transparent 0),
+      linear-gradient(90deg, var(--dz-line) 50%, transparent 0),
+      linear-gradient(0deg, var(--dz-line) 50%, transparent 0),
+      linear-gradient(0deg, var(--dz-line) 50%, transparent 0);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 10px 1px, 10px 1px, 1px 10px, 1px 10px;
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+    transition: background-color 0.45s var(--ease-out-expo), transform 0.45s
+      var(--ease-spring);
+  }
+  .dropzone-active {
+    --dz-line: oklch(var(--primary));
+    background-color: oklch(var(--primary) / 0.08);
+    transform: scale(1.015);
+  }
+  .dropzone-error {
+    --dz-line: oklch(var(--destructive) / 0.8);
+    background-color: oklch(var(--destructive) / 0.08);
+  }
+  /* Analysis stepper dot states */
+  .step-idle {
+    background: oklch(var(--step-idle));
+  }
+  .step-active {
+    background: oklch(var(--primary));
+    box-shadow: 0 0 0 3px oklch(var(--primary) / 0.22);
+  }
+  .step-done {
+    background: oklch(var(--step-done));
+  }
+  /* Sweeping highlight across the active analysis bar */
+  .analysis-sweep {
+    background: linear-gradient(
+      100deg,
+      transparent 20%,
+      oklch(var(--foreground) / 0.35) 50%,
+      transparent 80%
+    );
+    background-size: 220% 100%;
+  }
+  /* Chord chips in the generated result card */
+  .chord-chip {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    border: 1px solid oklch(var(--hairline));
+    background: oklch(var(--muted) / 0.6);
+  }
+  .chord-chip-current {
+    border-color: oklch(var(--primary) / 0.8);
+    background: oklch(var(--primary) / 0.16);
+    color: oklch(var(--foreground));
+  }
+  .user-track-tag {
+    color: oklch(var(--accent));
+    border: 1px solid oklch(var(--accent) / 0.45);
+  }
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

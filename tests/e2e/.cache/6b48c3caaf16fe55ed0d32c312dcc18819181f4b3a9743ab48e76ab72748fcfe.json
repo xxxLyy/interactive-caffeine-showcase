@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-24T08:38:38.850Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"示范 Demo 共振示范 D Major · 89 BPM\" in \"示范 Demo\"",
+        "target": {
+          "role": "button",
+          "name": "示范 Demo 共振示范 D Major · 89 BPM",
+          "within": "示范 Demo"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "demo-track-play.e2e.ts::demo-track-play",
+      "targetId": "web",
+      "instructionDigest": "319c204eedd39fc8c843bebfdab9b07d392f7fa90926084cf75473da3fe63ad4",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "I pressed the 共振示范 track in 我的曲目, and the demo track is now selected and playing. The player shows \"Now Playing · Demo\" for 共振示范 (D Major, 89 BPM, at 0:01 / 4:00). The track's play button has switched to \"暂停曲目 Pause\".",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "89.0"
+      },
+      {
+        "text": "波浪 Wave"
+      },
+      {
+        "text": "-26 dB"
+      },
+      {
+        "text": "Now Playing · Demo"
+      },
+      {
+        "text": "D Major"
+      },
+      {
+        "text": "89 BPM · D Major"
+      },
+      {
+        "role": "button",
+        "name": "暂停曲目 Pause",
+        "text": "暂停",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "星系 Galaxy",
+        "text": "星系"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "120.0"
+      },
+      {
+        "text": "星系 Galaxy"
+      },
+      {
+        "text": "−∞ dB"
+      },
+      {
+        "text": "Paused · Ambient"
+      },
+      {
+        "text": "Abyssal Drift"
+      },
+      {
+        "text": "76 BPM · A Nat. Minor"
+      },
+      {
+        "role": "button",
+        "name": "播放曲目 Play",
+        "text": "播放"
+      },
+      {
+        "role": "button",
+        "name": "星系 Galaxy",
+        "text": "星系",
+        "states": [
+          "pressed"
+        ]
+      }
+    ],
+    "endWaitMs": 16577,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}
